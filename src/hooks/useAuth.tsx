@@ -25,7 +25,6 @@ const useAuth = () => {
         photoURL: user.photoURL ? user.photoURL : "",
       })
     );
-    user.getIdToken().then((token) => localStorage.setItem("token", token));
   };
 
   const emailLogin = (email: string, password: string) => {
