@@ -28,7 +28,7 @@ const Drawer = ({ isOpen, close, children }: IProps) => {
               key="Drawer"
               className={
                 (isMobile ? "w-full " : "w-3/12 ") +
-                "absolute block overflow-hidden bg-white top-0 h-screen p-4 z-50 border-l-2 dark:bg-neutral-800 dark:border-neutral-700"
+                "absolute block  overflow-hidden bg-white top-0 h-screen p-4 z-50 border-l-2 dark:bg-neutral-800 dark:border-neutral-700"
               }
             >
               <DrawerCloseButton onClick={close} />

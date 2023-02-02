@@ -5,11 +5,11 @@ import Button from "../../components/Button/Button";
 import TextButton from "../../components/TextButton/TextButton";
 import ErrorText from "../../components/ErrorText/ErrorText";
 import LoginLogo from "./LoginLogo";
-import ForgotDrawer from "./ForgotDrawer";
+import ForgotDrawer from "../../features/Drawers/ForgotDrawer";
 
 import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../hooks/useAuth";
-import RegisterDrawer from "./RegisterDrawer";
+import RegisterDrawer from "../../features/Drawers/RegisterDrawer";
 
 const Login = () => {
   const { emailLogin, googleLogin } = useAuth();
@@ -37,7 +37,7 @@ const Login = () => {
     <div className="flex flex-col justify-center items-center h-screen w-screen text-gray-700 lg:flex-row-reverse dark:bg-neutral-800 dark:text-gray-300">
       <LoginLogo />
       <div className="flex flex-col items-center w-full px-10 lg:w-6/12">
-        <div className="max-w-md flex flex-col gap-2 ">
+        <div className="lg:min-w-[22rem] max-w-lg flex flex-col gap-2 ">
           <Input
             id="email"
             type="email"
