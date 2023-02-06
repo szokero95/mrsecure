@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
-import { v4 } from "uuid";
 import { useSelector } from "react-redux";
+import { v4 } from "uuid";
 
 import { RootState } from "../../store";
 
 import { ISecret } from "../../interfaces/secret";
 
+import useSecrets from "../../hooks/useSecrets";
+
 import Drawer from "../../components/Drawer/Drawer";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
 import ErrorText from "../../components/ErrorText/ErrorText";
-import useSecrets from "../../hooks/useSecrets";
 
 interface IProps {
   secretId?: string;

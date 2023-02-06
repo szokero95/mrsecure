@@ -1,18 +1,20 @@
-import Button from "../../components/Button/Button";
-import { AiFillEdit, AiFillDelete, AiFillStar } from "react-icons/ai";
 import { useContext, useState } from "react";
-import useFavicon from "../../hooks/useFavicon";
-import Hr from "../../components/Hr/Hr";
-import PreviewInput from "./PreviewInput";
-import SecretDrawer from "../Drawers/SecretDrawer";
+import { useSelector } from "react-redux";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 
-import { useSelector } from "react-redux";
-import { RootState } from "../../store";
+import { AiFillEdit, AiFillDelete, AiFillStar } from "react-icons/ai";
 
+import { RootState } from "../../store";
 import { SelectedContext } from "../../context/selected";
+import useFavicon from "../../hooks/useFavicon";
 import useSecrets from "../../hooks/useSecrets";
+
+import Button from "../../components/Button/Button";
+import Hr from "../../components/Hr/Hr";
+
+import PreviewInput from "./PreviewInput";
+import SecretDrawer from "../Drawers/SecretDrawer";
 
 const PreviewContent = () => {
   const { secrets } = useSelector((state: RootState) => state);

@@ -1,2 +1,0 @@
-Fix night mode bg
-Fix Save buttons

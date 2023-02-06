@@ -1,10 +1,11 @@
 import { useState } from "react";
 
+import useAuth from "../../hooks/useAuth";
+
 import Button from "../../components/Button/Button";
 import Drawer from "../../components/Drawer/Drawer";
 import ErrorText from "../../components/ErrorText/ErrorText";
 import Input from "../../components/Input/Input";
-import useAuth from "../../hooks/useAuth";
 
 interface IProps {
   isOpen: boolean;

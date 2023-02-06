@@ -1,14 +1,18 @@
 import { useContext, useEffect, useState } from "react";
-import Button from "../../components/Button/Button";
-import Input from "../../components/Input/Input";
-import { ISecret } from "../../interfaces/secret";
-import SecretListItem from "./SecretListItem";
-import SecretDrawer from "../Drawers/SecretDrawer";
-import { AiOutlinePlus } from "react-icons/ai";
-
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
+
+import { AiOutlinePlus } from "react-icons/ai";
+
+import { ISecret } from "../../interfaces/secret";
+
 import { SelectedContext } from "../../context/selected";
+
+import SecretListItem from "./SecretListItem";
+import SecretDrawer from "../Drawers/SecretDrawer";
+
+import Button from "../../components/Button/Button";
+import Input from "../../components/Input/Input";
 
 const SecretList = () => {
   const { selected } = useContext(SelectedContext);

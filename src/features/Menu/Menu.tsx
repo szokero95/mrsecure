@@ -1,17 +1,18 @@
-import FolderListItem from "./FolderListItem";
-import Hr from "../../components/Hr/Hr";
 import { useContext, useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 import { BsShieldLockFill } from "react-icons/bs";
 import { AiFillEdit, AiFillFolder, AiFillStar } from "react-icons/ai";
 
+import { SelectedContext } from "../../context/selected";
+import useAuth from "../../hooks/useAuth";
+
+import FolderListItem from "./FolderListItem";
 import FolderDrawer from "../Drawers/FolderDrawer";
 
-import { useSelector } from "react-redux";
-import { RootState } from "../../store";
-import { SelectedContext } from "../../context/selected";
 import Button from "../../components/Button/Button";
-import useAuth from "../../hooks/useAuth";
+import Hr from "../../components/Hr/Hr";
 
 const Menu = () => {
   const { folders } = useSelector((state: RootState) => state);

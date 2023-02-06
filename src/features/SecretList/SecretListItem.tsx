@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ISecret } from "../../interfaces/secret";
 import { AiFillStar } from "react-icons/ai";
+import { ISecret } from "../../interfaces/secret";
 import useFavicon from "../../hooks/useFavicon";
 import { SelectedContext } from "../../context/selected";
 

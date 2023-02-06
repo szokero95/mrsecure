@@ -1,4 +1,4 @@
-import { Context, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { v4 } from "uuid";
 import { useSelector } from "react-redux";
 import { confirmAlert } from "react-confirm-alert";
@@ -6,13 +6,14 @@ import "react-confirm-alert/src/react-confirm-alert.css";
 
 import { RootState } from "../../store";
 
+import useFolders from "../../hooks/useFolders";
+import useSecrets from "../../hooks/useSecrets";
+import { SelectedContext } from "../../context/selected";
+
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
 import ErrorText from "../../components/ErrorText/ErrorText";
 import Drawer from "../../components/Drawer/Drawer";
-import useFolders from "../../hooks/useFolders";
-import useSecrets from "../../hooks/useSecrets";
-import { SelectedContext } from "../../context/selected";
 
 interface IProps {
   id: string | undefined;

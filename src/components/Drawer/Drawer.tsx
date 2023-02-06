@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { v4 } from "uuid";
+
+import useIsMobile from "../../hooks/useIsMobile";
+
 import DrawerCloseButton from "./DrawerCloseButton";
 import GrayBg from "./GrayBg";
-import useIsMobile from "../../hooks/useIsMobile";
 
 interface IProps {
   isOpen: boolean;

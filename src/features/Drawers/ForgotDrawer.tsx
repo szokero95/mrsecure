@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 import Button from "../../components/Button/Button";
 import Drawer from "../../components/Drawer/Drawer";
 import Input from "../../components/Input/Input";
-import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 
 interface IProps {
   isOpen: boolean;
